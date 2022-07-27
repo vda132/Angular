@@ -1,0 +1,12 @@
+D:\Angular\Back\Back\DTOs\bin\Debug\net6.0\DTOs.deps.json
+D:\Angular\Back\Back\DTOs\bin\Debug\net6.0\DTOs.dll
+D:\Angular\Back\Back\DTOs\bin\Debug\net6.0\DTOs.pdb
+D:\Angular\Back\Back\DTOs\obj\Debug\net6.0\DTOs.csproj.AssemblyReference.cache
+D:\Angular\Back\Back\DTOs\obj\Debug\net6.0\DTOs.GeneratedMSBuildEditorConfig.editorconfig
+D:\Angular\Back\Back\DTOs\obj\Debug\net6.0\DTOs.AssemblyInfoInputs.cache
+D:\Angular\Back\Back\DTOs\obj\Debug\net6.0\DTOs.AssemblyInfo.cs
+D:\Angular\Back\Back\DTOs\obj\Debug\net6.0\DTOs.csproj.CoreCompileInputs.cache
+D:\Angular\Back\Back\DTOs\obj\Debug\net6.0\DTOs.dll
+D:\Angular\Back\Back\DTOs\obj\Debug\net6.0\refint\DTOs.dll
+D:\Angular\Back\Back\DTOs\obj\Debug\net6.0\DTOs.pdb
+D:\Angular\Back\Back\DTOs\obj\Debug\net6.0\ref\DTOs.dll

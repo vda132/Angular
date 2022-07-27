@@ -1,0 +1,67 @@
+<div class="header">
+    <div>
+        <p>Add/update/delete your tasks</p>
+    </div>
+    <form [formGroup]="taskForm" style="margin-bottom: 5rem;">
+        <div class="form-group">
+            <label for="tasks-component">Name</label>
+            <input id="add-name" class="form-control" name="name" formControlName="name" />
+            <div class="alert alert-danger"
+                *ngIf="taskForm.controls['name'].invalid && taskForm.controls['name'].touched">Name must be
+                less
+                then 20 symbols
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="add-discription">Description</label>
+            <textarea id="add-discription" class="form-control" name="description"
+                formControlName="description">
+            </textarea>
+            <div class="alert alert-danger"
+                *ngIf="taskForm.controls['description'].invalid && taskForm.controls['description'].touched">Description must be
+                less
+                then 20 symbols
+            </div>
+        </div>
+        <button class="btn btn-outline-success" [disabled]="taskForm.invalid" (click)="submit()">Submit</button>
+        <div class="alert alert-danger"
+                *ngIf="errorMessage.length > 0">
+                {{errorMessage}}
+            </div>
+    </form>
+    <div>
+        <table class="table table-hover" style="margin: 0;">
+            <thead class="thead-dark">
+                <tr>
+                    <th>
+                        Name
+                    </th>
+                    <th>
+                        Description
+                    </th>
+                    <th class="manipulation-th">
+                        Options
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let task of tasks">
+                    <td>
+                        {{task.name}}
+                    </td>
+                    <td>
+                        {{task.description}}
+                    </td>
+                    <td class="manipulation-td">
+                        <button type="button" class="btn btn-outline-warning" style="margin: 5px;" (click)="onUpdateClick(task)">
+                            Update
+                        </button>
+                        <button type="button" class="btn btn-outline-danger" (click)="deleteTask(task)">
+                            Delete
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
